@@ -29,3 +29,5 @@ CREATE TABLE analytics_results
     metric_name      VARCHAR(50),
     result_data      JSONB       NOT NULL  -- поле для хранения массивов прогноза или описания аномалии
 );
+
+CREATE INDEX idx_weather_city_timestamp ON weather_records(city_id, timestamp);
