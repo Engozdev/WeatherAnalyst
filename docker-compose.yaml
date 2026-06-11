@@ -13,7 +13,7 @@ services:
       - "${DB_PORT}:5432"
     volumes:
       - pgdata:/var/lib/postgresql
-      - ./main/resources/db/migrations/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./src/main/resources/db/migrations/init.sql:/docker-entrypoint-initdb.d/init.sql
 
 volumes:
   pgdata:
