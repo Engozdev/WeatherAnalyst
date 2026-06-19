@@ -1,5 +1,15 @@
 plugins {
     id 'java'
+    id 'application'
+}
+
+application {
+    mainClass = 'org.practice.Main'
+}
+
+run {
+    standardInput = System.in
+    jvmArgs = ["-Dfile.encoding=UTF-8"]
 }
 
 group = 'org.practice'

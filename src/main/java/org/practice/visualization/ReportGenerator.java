@@ -338,7 +338,7 @@ public class ReportGenerator {
         return list;
     }
 
-    private List<String> fetchAllAnomaliesGrouped(int cityId, int year) {
+    public List<String> fetchAllAnomaliesGrouped(int cityId, int year) {
         List<String> rawAnomalies = fetchAllAnomalies(cityId, year);
         List<String> grouped = new ArrayList<>();
 
